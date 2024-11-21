@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary { 
+        @apply flex min-w-fit justify-center items-center py-2.5 px-5 bg-sea-600 text-white text-lg font-semibold rounded-sm shadow-md hover:bg-sea-800 focus:outline-none focus:ring focus:ring-sea-400 focus:ring-opacity-75;
+     }
+}

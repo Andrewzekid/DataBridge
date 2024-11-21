@@ -1,0 +1,21 @@
+{% load static %}
+<div class="font-[Poppins] bg-sea-800">
+    <header class="">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img src="{% static 'logosm.png' %}" alt="" class="w-36 md:w-80 max-w-96">
+            </div>
+            
+            <div class="flex items-center gap-6">
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'logout' %}" class="bg-sea-600 text-white px-5 py-2 rounded-full hover:bg-[]">Log Out</a>
+                {% else %}
+                <a href="{% url 'signup' %}" class="bg-sea-600 text-white font-semibold px-5 py-2 rounded-full hover:bg-[]">Sign in</a>
+                <ion-icon name="menu" onclick="onToggleMenu(this)" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+
+
+</div>
