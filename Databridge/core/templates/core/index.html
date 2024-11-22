@@ -1,4 +1,5 @@
 {% extends "core/base.html" %}
+{% load static %}
 {% block title %}
 Databridge | Home
 {% endblock %}
@@ -28,16 +29,20 @@ Databridge | Home
         <h2 class="text-2xl ml-3 font-bold">Active Data Requests</h2>
     </div>
     <div class=" mt-4 grid md:grid-rows-3 md:grid-cols-4 gap-4">
-        <div class="w-60 max-w-full border border-gray-300 grid grid-cols-1 divide-y rounded-lg overflow-hidden bg-white">
-            <div class="relative h-28 flex items-center justify-center">
-            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        <div class="w-80 max-w-full border border-gray-300 grid grid-cols-1 divide-y rounded-lg overflow-hidden bg-white">
+            <div class="relative h-24 flex items-center justify-center">
+            <img class="rounded-t-lg max-w-20 max-h-20 object-cover" src="{% static 'sparklogo.jpg' %}" alt="product image" />
             <span class="absolute top-2 right-2 bg-black text-white text-xs font-medium px-3 py-1 rounded-full">
                 By November 18th
             </span>
             </div>
-            <div class="p-4 text-left">
-            <p class="text-sm font-bold mb-1">Company</p>
-            <p class="text-xs text-gray-500 mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur quidem rerum corrupti officia et.</p>
+            <div class="p-4 h-auto text-left">
+            <p class="text-xl font-bold mb-2">Spark</p>
+            <p class="text-xs text-gray-500 mb-1 truncate">
+                Personalized treatment recommendations</p>
+            <p class="text-sm text-gray-900 mb-1 truncate">
+                Pet medical records, species information, <br>
+                PHR data for personalized veterinary AI solutions.</p>
             <p class="text-sm text-sea-800 opacity-80">$1 per 10 submissions</p>
             </div>
             <div class="p-4 text-left flex flex-row items-center justify-between">
@@ -45,16 +50,34 @@ Databridge | Home
                 <span class="font-thin text-right text-sm">4900 files left</span>
             </div>
         </div> 
-        <div class="w-60 max-w-full border border-gray-300 grid grid-cols-1 divide-y rounded-lg overflow-hidden bg-white">
-            <div class="relative h-28 flex items-center justify-center">
-            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        <div class="max-w-full w-80 border border-gray-300 grid grid-cols-1 divide-y rounded-lg overflow-hidden bg-white">
+            <div class="relative h-24 flex justify-center items-center">
+            <img class="rounded-t-lg max-w-20 max-h-20 object-cover" src="{% static 'twinpeakslogo.jpg' %}" alt="product image" />
             <span class="absolute top-2 right-2 bg-black text-white text-xs font-medium px-3 py-1 rounded-full">
                 By November 18th
             </span>
             </div>
             <div class="p-4 text-left">
-            <p class="text-sm font-bold mb-1">Company</p>
-            <p class="text-xs text-gray-500 mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur quidem rerum corrupti officia et.</p>
+            <p class="text-xl font-bold mb-1">Twinpeaks</p>
+            <p class="text-xs text-gray-500 mb-1 truncate">Family relationships and social <br>
+                connections data, voice recordings from calls </p>
+            <p class="text-sm text-sea-800 opacity-80">$10 per 50 submissions</p>
+            </div>
+            <div class="p-4 text-left flex flex-row items-center justify-between">
+                <span class="font-semibold text-lg">$30000</span>
+                <span class="font-thin text-right text-sm">490 files left</span>
+            </div>
+        </div> 
+        <div class="max-w-full w-80 border border-gray-300 grid grid-cols-1 divide-y rounded-lg overflow-hidden bg-white">
+            <div class="relative h-24 flex items-center justify-center">
+            <img class="rounded-t-lg object-cover max-w-20 max-h-20" src="{% static 'plusbaselogo.jpg' %}" alt="product image" />
+            <span class="absolute top-2 right-2 bg-black text-white text-xs font-medium px-3 py-1 rounded-full">
+                By November 18th
+            </span>
+            </div>
+            <div class="p-4 text-left">
+            <p class="text-xl font-bold mb-1">Company</p>
+            <p class="text-xs text-gray-500 mb-1 truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur quidem rerum corrupti officia et.</p>
             <p class="text-sm text-sea-800 opacity-80">$1 per 10 submissions</p>
             </div>
             <div class="p-4 text-left flex flex-row items-center justify-between">
@@ -62,33 +85,16 @@ Databridge | Home
                 <span class="font-thin text-right text-sm">4900 files left</span>
             </div>
         </div> 
-        <div class="w-60 max-w-full border border-gray-300 grid grid-cols-1 divide-y rounded-lg overflow-hidden bg-white">
+        <div class="max-w-full w-80 border border-gray-300 grid grid-cols-1 divide-y rounded-lg overflow-hidden bg-white">
             <div class="relative h-28 flex items-center justify-center">
-            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+            <img class="rounded-t-lg object-cover max-w-20 max-h-20" src="{% static 'mainelogo.jpg' %}" alt="product image" />
             <span class="absolute top-2 right-2 bg-black text-white text-xs font-medium px-3 py-1 rounded-full">
                 By November 18th
             </span>
             </div>
             <div class="p-4 text-left">
-            <p class="text-sm font-bold mb-1">Company</p>
-            <p class="text-xs text-gray-500 mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur quidem rerum corrupti officia et.</p>
-            <p class="text-sm text-sea-800 opacity-80">$1 per 10 submissions</p>
-            </div>
-            <div class="p-4 text-left flex flex-row items-center justify-between">
-                <span class="font-semibold text-lg">$15000</span>
-                <span class="font-thin text-right text-sm">4900 files left</span>
-            </div>
-        </div> 
-        <div class="w-60 max-w-full border border-gray-300 grid grid-cols-1 divide-y rounded-lg overflow-hidden bg-white">
-            <div class="relative h-28 flex items-center justify-center">
-            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
-            <span class="absolute top-2 right-2 bg-black text-white text-xs font-medium px-3 py-1 rounded-full">
-                By November 18th
-            </span>
-            </div>
-            <div class="p-4 text-left">
-            <p class="text-sm font-bold mb-1">Company</p>
-            <p class="text-xs text-gray-500 mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur quidem rerum corrupti officia et.</p>
+            <p class="text-xl font-bold mb-1">Company</p>
+            <p class="text-xs text-gray-500 mb-1 truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur quidem rerum corrupti officia et.</p>
             <p class="text-sm text-sea-800 opacity-80">$1 per 10 submissions</p>
             </div>
             <div class="p-4 text-left flex flex-row items-center justify-between">
